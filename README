@@ -1,11 +1,30 @@
-# == Paypal Sweep
-#   This script automates the withdrawal of the balance of a specified Paypal
-#   account to the users bank account.
-#
-# == Usage 
-#   paypal_balance_transfer.rb -u [paypal username] -p [paypal password] [options]
-#
-# == Author
-#   Jeremy Jarvis
-#   http://twitter.com/jeremyjarvis
-#
+= PayPal Sweep
+  This script automates the withdrawal of the balance of a specified PayPal
+  account to the confirmed bank account.
+
+== Usage 
+  paypal_sweep.rb -u [paypal username] -p [paypal password] [options]
+
+  For help use: paypal_balance_transfer -h
+
+== Options
+  -u, --user		The PayPal account username
+  -p, --password	The PayPal password for specified account
+  -q, --quiet       Don't output messages to screen
+  -s, --sweep       Complete the full balance withdrawal
+  -h, --help        Displays script help
+
+== Examples
+  Display the account balance only:
+  	paypal_sweep.rb -u paypal_user@gmail.com -p mysecretpassword
+
+  Output and withdraw the full balance:
+    paypal_sweep.rb -u paypal_user@gmail.com -p mysecretpassword --sweep
+
+== Author
+  Jeremy Jarvis
+  http://twitter.com/jeremyjarvis
+
+== Copyright
+  Copyright (c) 2009 Jeremy Jarvis. Licensed under the MIT License:
+  http://www.opensource.org/licenses/mit-license.php
