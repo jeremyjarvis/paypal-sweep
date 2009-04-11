@@ -1,16 +1,15 @@
-= PayPal Sweep
+== PayPal Sweep
   This script automates the withdrawal of the balance of a specified PayPal
   account to the confirmed bank account.
 
 == Usage 
   paypal_sweep.rb -u [paypal username] -p [paypal password] [options]
 
-  For help use: paypal_balance_transfer -h
+  For help use: paypal_sweep -h
 
 == Options
   -u, --user		The PayPal account username
   -p, --password	The PayPal password for specified account
-  -q, --quiet       Don't output messages to screen
   -s, --sweep       Complete the full balance withdrawal
   -h, --help        Displays script help
 
