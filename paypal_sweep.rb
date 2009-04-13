@@ -31,7 +31,8 @@ class PaypalSweep
   
   def initialize
     # start logger
-    @log = Logger.new('log/paypal-sweep.log','weekly')
+    log_path = File.expand_path(File.dirname(__FILE__))
+    @log = Logger.new("#{log_path}/log/paypal-sweep.log","weekly")
     @log.level = Logger::DEBUG
     
     # Create new mechanize object
